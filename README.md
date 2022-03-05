@@ -11,4 +11,4 @@ In the context of this problem, we can break down the LSH algorithm into 3 broad
 2. Min hashing
 3. Locality-sensitive hashing
 
-![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/Screen%20Shot%202022-03-05%20at%209.33.49%20AM.png)
+![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.33.49%20AM.png)
