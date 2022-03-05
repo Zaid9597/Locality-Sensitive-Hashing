@@ -28,4 +28,11 @@ Below are the steps on how LSH converts an embedding in a hash of size K-
 2. Check if particular embedding is above or below the hyperplane and assign 1/0
 3. Do step 2 for each K hyperplanes to arrive at the hash value
 
-![image]()
+![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.44.41%20AM.png)
+
+Let’s now look at how LSH will perform the search. Given a new image patch, we will use LSH to create a hash for the given image and then compare the distance from image patches of the pictures of patches.csv dataset which shares the same hash value. In this way, instead of doing linear search over the whole patches.csv dataset we will only do a similarity search with a subset of images which shares the same hash value with the input image. For our project, we are using lsh_search function for an approximate nearest neighbor search. We have found out similar images to a given patch using lsh_search as well as linear search and found that linear search takes around 3 times the time take by lsh search which is very expensive for large data sets.
+
+Here are some outputs from the project we have implemented on LSH Search:
+
+![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.47.55%20AM.png)
+![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.48.03%20AM.png)
