@@ -19,7 +19,7 @@ Now let us understand what we have done here in the project:
 
 ## Locality Sensitive Hashing for fast approximate nearest neighbor search
 
-We use our [patches.csv](https://drive.google.com/file/d/1e-11EFHXPW0y6baIjVA-n82SUnenZYHi/view?usp=sharing) patches.csv dataset and get a target image, calculate distance b/w the new image and all the other images in patches.csv to find similar images. This process is computationally expensive in nature and as a new image embedding have to compare with all the 59K+ image patches in the patches.csv file to find the most similar image(nearest neighbor), which in computational complexity notation is an O(N²) problem and will take exponentially more time to retrieve similar images as the number of images increases.
+We use our [patches.csv](https://drive.google.com/file/d/1GXnwAWZDgDwfbuIRzIwyTU3K1BcCh9P6/view?usp=sharing) dataset and get a target image, calculate distance b/w the new image and all the other images in patches.csv to find similar images. This process is computationally expensive in nature and as a new image embedding have to compare with all the 59K+ image patches in the patches.csv file to find the most similar image(nearest neighbor), which in computational complexity notation is an O(N²) problem and will take exponentially more time to retrieve similar images as the number of images increases.
 
 To solve this problem, we will use **locality sensitive hashing(LSH)** which is an approximate nearest neighbor algorithm which reduces the computational complexity to O(log N). In short, LSH generates a hash value for image embeddings while keeping spatiality of data in mind; in particular; data items that are similar in high-dimension will have a higher chance of receiving the same hash value.
 
@@ -36,3 +36,5 @@ Here are some outputs from the project we have implemented on LSH Search:
 
 ![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.47.55%20AM.png)
 ![image](https://github.com/Zaid9597/Locality-Sensitive-Hashing/blob/main/readme.md-images/Screen%20Shot%202022-03-05%20at%209.48.03%20AM.png)
+
+## Note: Download the dataset patches.csv by clicking on patches.csv.
